@@ -1,4 +1,5 @@
 import random
+import hint
 
 fruits = [
     "Apple", "Banana", "Cherry", "Date", "Fig", 
@@ -6,9 +7,9 @@ fruits = [
 ]
 
 
-guess = random.choice(wordlist)
+guess = random.choice(fruits)
 print(guess)
+hint.hint(guess)
 
 #Hint
 
-print(guess[0])
