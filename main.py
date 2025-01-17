@@ -2,14 +2,12 @@ import random
 import hint
 
 fruits = [
-    "Apple", "Banana", "Cherry", "Date", "Fig", 
+    "Apple", "Banana", "Cherry", "Peach", "Watermelon"
     "Grapes", "Mango", "Orange", "Pineapple", "Strawberry"
 ]
 
-
 guess = random.choice(fruits)
-print(guess)
 hint.hint(guess)
 
-#Hint
+
 
