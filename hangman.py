@@ -2,10 +2,6 @@ import hint
 import random
 import display_hangman
 import anim
-#This function displays the state of the word to be user_guessed.
-# def displayword(word, inp):
-#     return ' '.join([letter if letter in inp else '_' for letter in word])
-    #This is the main function for the game.
 
 
 fruits = [
@@ -27,7 +23,7 @@ def hangman():
         user_guess = input('Enter the next guess : ').lower() #Makes all user_guesses in lower.
         
         if len(user_guess) != 1 or not user_guess.isalpha() : #Checks for valid inputs.
-            print("The user_guess was not appropriate. Please enter a single letter as your user_guess.")
+            print("The guess was not appropriate. Please enter a single letter as your user_guess.")
             continue
 
         if user_guess in inp : #Checks whether the letter has already been user_guessed.
@@ -40,6 +36,7 @@ def hangman():
             print("Good job! You guessed a letter correctly.")
             if set(guess) <= set(inp):
                 print("Congratulations! You've guessed the word:", guess)
+                anim.draw_stickman()
                 break
 
         else:
