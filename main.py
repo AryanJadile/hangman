@@ -1,13 +1,11 @@
 import random
 import hint
-
+import display_hangman
+import hangman
 fruits = [
-    "Apple", "Banana", "Cherry", "Peach", "Watermelon"
-    "Grapes", "Mango", "Orange", "Pineapple", "Strawberry"
+    "apple", "banana", "cherry", "peach", "watermelon"
+    "grapes", "mango", "orange", "pineapple", "strawberry"
 ]
 
-guess = random.choice(fruits)
-hint.hint(guess)
-
-
+hangman.hangman()
 
