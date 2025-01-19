@@ -1,4 +1,4 @@
-#### Steps:
+# Steps to run Hangman:
 - Clone the repository to your local device using ``` git clone https://github.com/AryanJadile/hangman.git```
 - Open the repository in VS Code or any desired text editor.
 - Open Terminal
