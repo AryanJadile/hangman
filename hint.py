@@ -9,26 +9,26 @@ all_hints = {
     "orange": "Peel me, juice me, but don't call me the color of my own name!",
     "pineapple": "I'm spiky on the outside, but once you peel me, I'm sweet and tropical inside!",
     "strawberry": "I wear my seeds on the outside, fashion-forward and delicious!",
-    "Mumbai": "The financial capital of India, home to Bollywood.",
-    "Delhi": "The capital city of India, known for India Gate and Red Fort.",
-    "Bangalore": "India’s Silicon Valley, a major IT hub.",
-    "Hyderabad": "City of Pearls, famous for biryani and Charminar.",
-    "Chennai": "Coastal city known for Marina Beach and filter coffee.",
-    "Kolkata": "Cultural capital, home to Howrah Bridge and Rosogolla.",
-    "Jaipur": "The Pink City, famous for Hawa Mahal and Amer Fort.",
-    "Ahmedabad": "Largest city of Gujarat, famous for Sabarmati Ashram.",
-    "Pune": "Oxford of the East, known for its educational institutions.",
-    "Lucknow": "City of Nawabs, known for its kebabs and chikankari embroidery.",
-    "Krishna": "The eighth avatar of Vishnu, known for the Bhagavad Gita.",
-    "Ravana": "The ten-headed king of Lanka, antagonist in the Ramayana.",
-    "Ganesha": "Elephant-headed god, remover of obstacles.",
-    "Karna": "Warrior of Mahabharata, known for his unwavering generosity.",
-    "Hanuman": "Devotee of Lord Rama, known for his immense strength.",
-    "Lakshmi": "Goddess of wealth and prosperity.",
-    "Shiva": "The destroyer in the Hindu trinity, carries a trident.",
-    "Draupadi": "Wife of the Pandavas, known for her vow of revenge.",
-    "Vishnu": "Preserver of the universe, has ten avatars.",
-    "Brahma": "The creator god, depicted with four heads."
+    "mumbai": "The financial capital of India, home to Bollywood.",
+    "delhi": "The capital city of India, known for India Gate and Red Fort.",
+    "bangalore": "India’s Silicon Valley, a major IT hub.",
+    "hyderabad": "City of Pearls, famous for biryani and Charminar.",
+    "chennai": "Coastal city known for Marina Beach and filter coffee.",
+    "kolkata": "Cultural capital, home to Howrah Bridge and Rosogolla.",
+    "jaipur": "The Pink City, famous for Hawa Mahal and Amer Fort.",
+    "ahmedabad": "Largest city of Gujarat, famous for Sabarmati Ashram.",
+    "pune": "Oxford of the East, known for its educational institutions.",
+    "lucknow": "City of Nawabs, known for its kebabs and chikankari embroidery.",
+    "krishna": "The eighth avatar of Vishnu, known for the Bhagavad Gita.",
+    "ravana": "The ten-headed king of Lanka, antagonist in the Ramayana.",
+    "ganesha": "Elephant-headed god, remover of obstacles.",
+    "karna": "Warrior of Mahabharata, known for his unwavering generosity.",
+    "hanuman": "Devotee of Lord Rama, known for his immense strength.",
+    "lakshmi": "Goddess of wealth and prosperity.",
+    "shiva": "The destroyer in the Hindu trinity, carries a trident.",
+    "draupadi": "Wife of the Pandavas, known for her vow of revenge.",
+    "vishnu": "Preserver of the universe, has ten avatars.",
+    "brahma": "The creator god, depicted with four heads."
 }
 
 fruits = [
@@ -36,16 +36,16 @@ fruits = [
     "grapes", "mango", "orange", "pineapple", "strawberry"
 ]
 cities = [
-    "Mumbai", "Delhi", "Jaipur", "Varanasi", "Agra", 
-    "Mysore", "Shimla", "Amritsar", "Goa", "Ooty"
+    "mumbai", "delhi", "bangalore", "hyderabad", "chennai", 
+    "kolkata", "jaipur", "ahmedabad", "pune", "lucknow"
 ]
 mythology = [
-    "Krishna", "Rama", "Shiva", "Lakshmi", "Hanuman", 
-    "Karna", "Draupadi", "Arjuna", "Ganesha", "Parvati"
+    "krishna", "Ravana", "ganesha", "karna", "hanuman", 
+    "lakshmi", "shiva", "draupadi", "vishnu", "brahma"
 ]
 
 def hint(guess,choose):
-    choose = str(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \n(Enter the name of your choice)"))
+    # choose = str(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \n(Enter the name of your choice)"))
     for i in range(len(all_hints)):
         if guess == list(all_hints.keys())[i]:
             return (list(all_hints.values())[i])

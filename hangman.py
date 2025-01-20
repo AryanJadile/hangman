@@ -9,18 +9,26 @@ fruits = [
     "grapes", "mango", "orange", "pineapple", "strawberry"
 ]
 cities = [
-    "Mumbai", "Delhi", "Jaipur", "Varanasi", "Agra", 
-    "Mysore", "Shimla", "Amritsar", "Goa", "Ooty"
+    "mumbai", "delhi", "bangalore", "hyderabad", "chennai", "kolkata",
+    "jaipur", "ahmedabad", "pune", "lucknow"
 ]
 mythology = [
-    "Krishna", "Rama", "Shiva", "Lakshmi", "Hanuman", 
-    "Karna", "Draupadi", "Arjuna", "Ganesha", "Parvati"
+    "krishna", "ravana", "ganesha", "karna", "hanuman", 
+    "lakshmi", "shiva", "draupadi", "vishnu", "brahma"
 ]
 
+choose = int(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \nEnter your choice: "))
+if choose == 1:
+    choose = fruits
+elif choose == 2:
+    choose = cities
+elif choose == 3:
+    choose = mythology
+else:
+    print("Wrong Inputs")
 
 def hangman():
     print("Welcome to the game!!!")
-    choose = str(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \n(Enter the name of your choice)")).lower()
     inp = set()
     guess = random.choice(choose)
     chances = 6
