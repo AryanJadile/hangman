@@ -12,10 +12,12 @@ cities = [
     "Mumbai", "Delhi", "Jaipur", "Varanasi", "Agra", 
     "Mysore", "Shimla", "Amritsar", "Goa", "Ooty"
 ]
+
 mythology = [
     "Krishna", "Rama", "Shiva", "Lakshmi", "Hanuman", 
     "Karna", "Draupadi", "Arjuna", "Ganesha", "Parvati"
 ]
+
 
 
 def hangman():
