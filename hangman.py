@@ -13,15 +13,23 @@ cities = [
     "Mysore", "Shimla", "Amritsar", "Goa", "Ooty"
 ]
 
+mythology = [
+    "Krishna", "Rama", "Shiva", "Lakshmi", "Hanuman", 
+    "Karna", "Draupadi", "Arjuna", "Ganesha", "Parvati"
+]
+
+
 
 def hangman():
     print("Welcome to the game!!!")
+    choose = str(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \n(Enter the name of your choice)")).lower()
     inp = set()
-    guess = random.choice(fruits)
+    guess = random.choice(choose)
     chances = 6
+
     while chances > 0 :
         display_hangman.display_pic(chances)
-        print(f"Hint: {hint.hint(guess)}")
+        print(f"Hint: {hint.hint(guess,choose)}")
         print("Word : ",hint.disp_word(guess, inp))
         print("Remaining chances : ", chances)
         print(f"Guessed Letters : {' '.join(sorted(inp)) if inp else 'None'}")
