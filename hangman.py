@@ -12,6 +12,7 @@ cities = [
     "mumbai", "delhi", "bangalore", "hyderabad", "chennai", "kolkata",
     "jaipur", "ahmedabad", "pune", "lucknow"
 ]
+
 mythology = [
     "krishna", "ravana", "ganesha", "karna", "hanuman", 
     "lakshmi", "shiva", "draupadi", "vishnu", "brahma"
@@ -26,6 +27,7 @@ elif choose == 3:
     choose = mythology
 else:
     print("Wrong Inputs")
+
 
 def hangman():
     print("Welcome to the game!!!")
