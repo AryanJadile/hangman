@@ -8,10 +8,23 @@ fruits = [
     "apple", "banana", "cherry", "peach", "watermelon"
     "grapes", "mango", "orange", "pineapple", "strawberry"
 ]
+<<<<<<< Updated upstream
+=======
+cities = [
+    "Mumbai", "Delhi", "Jaipur", "Varanasi", "Agra", 
+    "Mysore", "Shimla", "Amritsar", "Goa", "Ooty"
+]
+mythology = [
+    "Krishna", "Rama", "Shiva", "Lakshmi", "Hanuman", 
+    "Karna", "Draupadi", "Arjuna", "Ganesha", "Parvati"
+]
+
+choice = str(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \n(Enter the name of your choice)"))
+>>>>>>> Stashed changes
 def hangman():
     print("Welcome to the game!!!")
     inp = set()
-    guess = random.choice(fruits)
+    guess = random.choice(choice)
     chances = 6
     while chances > 0 :
         display_hangman.display_pic(chances)
