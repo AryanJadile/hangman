@@ -8,6 +8,12 @@ fruits = [
     "apple", "banana", "cherry", "peach", "watermelon"
     "grapes", "mango", "orange", "pineapple", "strawberry"
 ]
+cities = [
+    "Mumbai", "Delhi", "Jaipur", "Varanasi", "Agra", 
+    "Mysore", "Shimla", "Amritsar", "Goa", "Ooty"
+]
+
+
 def hangman():
     print("Welcome to the game!!!")
     inp = set()
