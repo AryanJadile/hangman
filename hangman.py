@@ -2,7 +2,7 @@ import hint
 import random
 import display_hangman
 import anim
-
+import multiplayer
 
 fruits = [
     "apple", "banana", "cherry", "peach", "watermelon"
@@ -18,19 +18,18 @@ mythology = [
     "lakshmi", "shiva", "draupadi", "vishnu", "brahma"
 ]
 
-choose = int(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \nEnter your choice: "))
-if choose == 1:
-    choose = fruits
-elif choose == 2:
-    choose = cities
-elif choose == 3:
-    choose = mythology
-else:
-    print("Wrong Inputs")
-
-
 def hangman():
-    print("Welcome to the game!!!")
+    choose = int(input("Choose from one of the categories: \n1. Fruits \n2. Cities \n3. Mythology \nEnter your choice: "))
+    if choose == 1:
+        choose = fruits
+    elif choose == 2:
+        choose = cities
+    elif choose == 3:
+        choose = mythology
+    else:
+        print("Wrong Inputs")
+        print("Welcome to the game!!!")
+
     inp = set()
     guess = random.choice(choose)
     chances = 6
@@ -66,7 +65,22 @@ def hangman():
             chances-=1
 
     if chances == 0 :
+        print(display_hangman.hangman_pics[-1])
         print("Gameover. You have lost the game. The word was", guess, ". Better luck next time.")
 
     
-    
+print("Do you want to play: \n1. Multiplayer \n2. Solo? ")
+try:
+    ch = int(input("Enter your choice: "))
+    print(f"User selected option: {ch}")  # Debug print
+
+    if ch == 1:
+        print("Starting Multiplayer Mode...")  # Debug print
+        multiplayer.multiplayer()
+    elif ch == 2:
+        print("Starting Solo Mode...\n")  # Debug print
+        hangman()
+    else:
+        print("Invalid option, please enter 1 or 2.")
+except ValueError:
+    print("Invalid input! Please enter a number (1 or 2).")
